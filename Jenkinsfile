@@ -9,7 +9,7 @@ pipeline {
 
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/manishbad/simple-java-maven-app.git'
+                checkout scm
             }
         }
 
